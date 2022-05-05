@@ -1,0 +1,94 @@
+form {
+  width: 500px;
+  padding: 15px 40px 40px;
+  margin: 50px;
+  margin-left: 27%;
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+.item {
+  padding-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.button {
+  text-align: center;
+
+  min-height: 50%;
+  width: 100%;
+  background-color: #4996ee;
+  font-size: 15px;
+  color: black;
+}
+
+.form-table {
+  border: 1px solid black;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+}
+
+body > table {
+  width: 80%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table.list {
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
+}
+
+.list th {
+  background-color: rgb(55, 77, 216);
+  color: white;
+}
+
+tr:nth-child(even),
+table.list thead > tr {
+  background-color: #ffffff;
+}
+
+tr:nth-child(odd),
+table.list thead > tr {
+  background-color: #ffffff;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0000ee;
+  margin-right: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 90%;
+}

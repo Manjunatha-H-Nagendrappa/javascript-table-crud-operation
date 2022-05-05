@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Table CRUD Operation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <form autocomplete="off" onsubmit="event.preventDefault();formSubmit();">
+        <h2>Application Form</h2>
+
+        <div class="item">
+          <label>Full Name</label>
+          <input type="text" placeholder="Full Name" id="name" maxlength="25" />
+          <div class="error" id="nameErr"></div>
+        </div>
+
+        <div class="item">
+          <label>E-mail</label>
+          <input type="text" placeholder="E-mail" id="email" maxlength="25" />
+        </div>
+
+        <div class="item">
+          <label>Phone Number</label>
+          <input
+            type="phone"
+            placeholder="Phone Number"
+            id="phone"
+            maxlength="10"
+          />
+        </div>
+
+        <div class="item">
+          <label>City</label>
+          <input type="text" placeholder="City" id="city" maxlength="20" />
+        </div>
+
+        <input type="submit" class="button" value="Submit" />
+      </form>
+    </div>
+    <br />
+    <h2>CRUD Operation</h2>
+    <div class="form-table">
+      <table class="list" id="formList">
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>E-mail</th>
+            <th>Phone Number</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
